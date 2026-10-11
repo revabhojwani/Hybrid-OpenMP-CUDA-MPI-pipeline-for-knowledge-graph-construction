@@ -21,6 +21,7 @@ from mpi4py import MPI
 from neo4j import GraphDatabase
 import json
 import time
+import os
 
 ENTITIES_PATH = "./data/entities.json"
 RELATIONS_PATH = "./data/relations.json"
@@ -28,7 +29,7 @@ RESOLVED_PATH = "./data/resolved_entities.json"
 
 NEO4J_URI = "bolt://localhost:7687"
 NEO4J_USER = "neo4j"
-NEO4J_PASSWORD = "os.environ.get("NEO4J_PASSWORD", "change-me") 
+NEO4J_PASSWORD = os.environ.get("NEO4J_PASSWORD", "change-me") 
 
 
 class GraphWriter:
