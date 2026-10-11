@@ -1,0 +1,18 @@
+test      n   mean (s)   std (s)
+ner_seq   3     483.94     38.56
+ner_t1    3     502.84     26.00
+ner_t8    3     147.56      3.98
+re_t1     3     494.37      6.47
+re_t8     3     155.18     10.64
+er_cpu    3      36.35      2.57
+er_cuda   3       4.88      0.13
+mpi_p1    3     677.21     28.20
+mpi_p8    3     241.98     23.52
+
+Stage comparisons (means)
+comparison                        speedup  workers  efficiency  worker-s
+NER: 1 thread -> 8 threads          3.41x        8       42.6%      1181
+NER: sequential script -> 8 thr     3.28x        8       41.0%      1181
+RE : 1 thread -> 8 threads          3.19x        8       39.8%      1241
+ER : CPU -> CUDA (1 GPU)            7.45x        1      744.9%         5
+MPI: 1 process -> 8 processes       2.80x        8       35.0%      1936
