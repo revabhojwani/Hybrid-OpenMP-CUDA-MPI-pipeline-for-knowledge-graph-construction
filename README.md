@@ -11,3 +11,4 @@ Summarise the results: python3 summarize_trials.py
 
 trial_results.csv holds the raw timings. Trials 2 and 3 ran on battery power and
 are excluded in the paper.
+Figures: open graphs.ipynb
